@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    text-decoration: none;
+    background-color: #e2e2e2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    background-color: black;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000
+}
+
+.navbar button {
+    margin: 5px;
+    width: 8vw;
+    height: 7vh;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.navbar button:hover {
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+}
+
+#app {
+    padding: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+#app .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+#app .grid div {
+    height: 13vh;
+    width: 15vw;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-image: linear-gradient(133deg, #2193b0, #6dd5ed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.DashboardParent {
+    text-align: center;
+}
+
+.DashboardParent .dashboard {
+    height: 13vh;
+    width: 15vw;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-image: linear-gradient(133deg, #2193b0, #6dd5ed);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.formParent {
+    display: block;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.formParent .form .form-group input {
+    margin-bottom: 1vh;
+    height: 3vh;
+    width: 20vw;
+    padding: 3px;
+    text-align: center;
+}
+
+.largeButton {
+    margin-bottom: 2vh;
+    height: 5vh;
+    width: 21vw;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    padding: 8.5px;
+}
+
+.smallButton {
+    margin-bottom: 2vh;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    color: white;
+    background-color: #076efd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #f5f5f5;
+}
